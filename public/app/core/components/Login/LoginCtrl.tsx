@@ -52,6 +52,7 @@ export class LoginCtrl extends PureComponent<Props, State> {
     };
 
     if (config.loginError) {
+      // TODO: whl-mark
       appEvents.emit('alert-warning', ['Login Failed', config.loginError]);
     }
   }

@@ -42,6 +42,7 @@ export class ChangePassword extends PureComponent<Props, State> {
     if (valid) {
       this.props.onSubmit(newPassword);
     } else {
+      // TODO: whl-mark
       appEvents.emit('alert-warning', ['New passwords do not match', '']);
     }
   };
@@ -77,11 +78,10 @@ export class ChangePassword extends PureComponent<Props, State> {
     return (
       <div className="login-inner-box" id="change-password-view">
         <div className="text-left login-change-password-info">
-          <h5>Change Password</h5>
-          Before you can get started with awesome dashboards we need you to make your account more secure by changing
-          your password.
+          <h5>修改密码</h5>
+          在您开始使用炫酷的仪表板之前，我们需要您通过更改密码来确保帐户安全。
           <br />
-          You can change your password again later.
+          您稍后可以再次更改密码。
         </div>
         <form className="login-form-group gf-form-group">
           <div className="login-form">
@@ -91,7 +91,7 @@ export class ChangePassword extends PureComponent<Props, State> {
               name="newPassword"
               className="gf-form-input login-form-input"
               required
-              placeholder="New password"
+              placeholder="新密码"
               onChange={this.onNewPasswordChange}
               ref={input => {
                 this.userInput = input;
@@ -105,17 +105,14 @@ export class ChangePassword extends PureComponent<Props, State> {
               className="gf-form-input login-form-input"
               required
               ng-model="command.confirmNew"
-              placeholder="Confirm new password"
+              placeholder="确认新密码"
               onChange={this.onConfirmPasswordChange}
             />
           </div>
           <div className="login-button-group login-button-group--right text-right">
-            <Tooltip
-              placement="bottom"
-              content="If you skip you will be prompted to change password next time you login."
-            >
+            <Tooltip placement="bottom" content="如果跳过，下次登录时将提示您更改密码。">
               <a className="btn btn-link" onClick={this.onSkip}>
-                Skip
+                跳过
               </a>
             </Tooltip>
 
@@ -125,7 +122,7 @@ export class ChangePassword extends PureComponent<Props, State> {
               onClick={this.onSubmit}
               disabled={!this.state.valid}
             >
-              Save
+              保存
             </button>
           </div>
         </form>
