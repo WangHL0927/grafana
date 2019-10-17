@@ -22,7 +22,7 @@ export const Footer: FC<Props> = React.memo(
             </li>
             <li>
               <a href="https://grafana.com/services/support" target="_blank" rel="noopener">
-                <i className="fa fa-support" /> 支持计划
+                <i className="fa fa-support" /> 支持
               </a>
             </li>
             <li>
