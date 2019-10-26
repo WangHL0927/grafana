@@ -89,12 +89,12 @@ export class LdapPage extends PureComponent<Props, State> {
 
             {config.buildInfo.isEnterprise && ldapSyncInfo && <LdapSyncInfo ldapSyncInfo={ldapSyncInfo} />}
 
-            <h3 className="page-heading">Test user mapping</h3>
+            <h3 className="page-heading">测试用户映射</h3>
             <div className="gf-form-group">
               <form onSubmit={this.search} className="gf-form-inline">
                 <FormField label="Username" labelWidth={8} inputWidth={30} type="text" id="username" name="username" />
                 <button type="submit" className="btn btn-primary">
-                  Run
+                  运行
                 </button>
               </form>
             </div>

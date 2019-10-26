@@ -12,16 +12,16 @@ export const LdapUserPermissions: FC<Props> = ({ permissions }) => {
         <table className="filter-table form-inline">
           <thead>
             <tr>
-              <th colSpan={1}>Permissions</th>
+              <th colSpan={1}>权限</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="width-16"> Grafana admin</td>
+              <td className="width-16"> Grafana管理员</td>
               <td>
                 {permissions.isGrafanaAdmin ? (
                   <>
-                    <i className="gicon gicon-shield" /> Yes
+                    <i className="gicon gicon-shield" /> 是
                   </>
                 ) : (
                   'No'
@@ -29,15 +29,15 @@ export const LdapUserPermissions: FC<Props> = ({ permissions }) => {
               </td>
             </tr>
             <tr>
-              <td className="width-16">Status</td>
+              <td className="width-16">状态</td>
               <td>
                 {permissions.isDisabled ? (
                   <>
-                    <i className="fa fa-fw fa-times" /> Inactive
+                    <i className="fa fa-fw fa-times" /> 无效
                   </>
                 ) : (
                   <>
-                    <i className="fa fa-fw fa-check" /> Active
+                    <i className="fa fa-fw fa-check" /> 有效
                   </>
                 )}
               </td>

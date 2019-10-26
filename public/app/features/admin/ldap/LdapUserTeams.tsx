@@ -16,9 +16,9 @@ export const LdapUserTeams: FC<Props> = ({ teams, showAttributeMapping }) => {
         <table className="filter-table form-inline">
           <thead>
             <tr>
-              {showAttributeMapping && <th>LDAP Group</th>}
-              <th>Organisation</th>
-              <th>Team</th>
+              {showAttributeMapping && <th>LDAP 组</th>}
+              <th>组织</th>
+              <th>团队</th>
             </tr>
           </thead>
           <tbody>
@@ -33,7 +33,7 @@ export const LdapUserTeams: FC<Props> = ({ teams, showAttributeMapping }) => {
                           <td />
                           <td>
                             <div className="text-warning">
-                              No match
+                              找不到匹配项
                               <Tooltip placement="top" content="No matching teams found" theme={'info'}>
                                 <span className="gf-form-help-icon">
                                   <i className="fa fa-info-circle" />
