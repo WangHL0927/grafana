@@ -45,11 +45,11 @@ class BottomNavLinks extends PureComponent<Props> {
               <a onClick={this.switchOrg}>
                 <div>
                   <div className="sidemenu-org-switcher__org-name">{user.orgName}</div>
-                  <div className="sidemenu-org-switcher__org-current">Current Org:</div>
+                  <div className="sidemenu-org-switcher__org-current">当前组织：</div>
                 </div>
                 <div className="sidemenu-org-switcher__switch">
                   <i className="fa fa-fw fa-random" />
-                  Switch
+                  切换
                 </div>
               </a>
             </li>

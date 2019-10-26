@@ -98,11 +98,11 @@ export class LoginForm extends PureComponent<Props, State> {
               onClick={this.onSubmit}
               disabled={!this.state.valid}
             >
-              登陆
+              登录
             </button>
           ) : (
             <button type="submit" className="btn btn-large p-x-2 btn-inverse btn-loading">
-              登陆中<span>.</span>
+              登录中<span>.</span>
               <span>.</span>
               <span>.</span>
             </button>
