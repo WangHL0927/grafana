@@ -28,7 +28,7 @@ export class PluginHelp extends PureComponent<Props, State> {
   }
 
   constructPlaceholderInfo() {
-    return 'No plugin help or readme markdown file was found';
+    return '找不到插件帮助或readme.md文件';
   }
 
   loadHelp = () => {
@@ -67,11 +67,11 @@ export class PluginHelp extends PureComponent<Props, State> {
     const { isError, isLoading, help } = this.state;
 
     if (isLoading) {
-      return <h2>Loading help...</h2>;
+      return <h2>加载帮助...</h2>;
     }
 
     if (isError) {
-      return <h3>'Error occurred when loading help'</h3>;
+      return <h3>'加载帮助时发生错误'</h3>;
     }
 
     if (type === 'panel_help' && help === '') {
