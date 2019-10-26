@@ -63,8 +63,8 @@ export class DashboardPicker extends PureComponent<Props, State> {
             defaultOptions={true}
             loadOptions={this.debouncedSearch}
             onChange={onSelected}
-            placeholder="Select dashboard"
-            noOptionsMessage={() => 'No dashboards found'}
+            placeholder="选择仪表板"
+            noOptionsMessage={() => '找不到仪表板'}
             value={currentDashboardId}
           />
         </div>
