@@ -26,11 +26,11 @@ const alertStateSortScore = {
 };
 
 const evalFunctions = [
-  { text: 'IS ABOVE', value: 'gt' },
-  { text: 'IS BELOW', value: 'lt' },
-  { text: 'IS OUTSIDE RANGE', value: 'outside_range' },
-  { text: 'IS WITHIN RANGE', value: 'within_range' },
-  { text: 'HAS NO VALUE', value: 'no_value' },
+  { text: '高于', value: 'gt' },
+  { text: '低于', value: 'lt' },
+  { text: '区间外', value: 'outside_range' },
+  { text: '区间内', value: 'within_range' },
+  { text: '无数据', value: 'no_value' },
 ];
 
 const evalOperators = [{ text: 'OR', value: 'or' }, { text: 'AND', value: 'and' }];
@@ -49,13 +49,13 @@ const reducerTypes = [
 ];
 
 const noDataModes = [
-  { text: 'Alerting', value: 'alerting' },
-  { text: 'No Data', value: 'no_data' },
-  { text: 'Keep Last State', value: 'keep_state' },
-  { text: 'Ok', value: 'ok' },
+  { text: '正在告警', value: 'alerting' },
+  { text: '无数据', value: 'no_data' },
+  { text: '保持之前状态', value: 'keep_state' },
+  { text: '正常', value: 'ok' },
 ];
 
-const executionErrorModes = [{ text: 'Alerting', value: 'alerting' }, { text: 'Keep Last State', value: 'keep_state' }];
+const executionErrorModes = [{ text: '正在告警', value: 'alerting' }, { text: '保持之前状态', value: 'keep_state' }];
 
 function createReducerPart(model: any) {
   const def = new QueryPartDef({ type: model.type, defaultParams: [] });

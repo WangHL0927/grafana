@@ -71,7 +71,7 @@ class StateHistory extends PureComponent<Props, State> {
       <div>
         {stateHistoryItems.length > 0 && (
           <div className="p-b-1">
-            <span className="muted">Last 50 state changes</span>
+            <span className="muted">最近50次状态更改</span>
             <button className="btn btn-small btn-danger pull-right" onClick={this.clearHistory}>
               <i className="fa fa-trash" /> {` Clear history`}
             </button>
@@ -99,7 +99,7 @@ class StateHistory extends PureComponent<Props, State> {
               );
             })
           ) : (
-            <i>No state changes recorded</i>
+            <i>没有记录到状态更改</i>
           )}
         </ol>
       </div>
