@@ -3,12 +3,12 @@ import { DataSourcePluginCategory } from 'app/types';
 
 export function buildCategories(plugins: DataSourcePluginMeta[]): DataSourcePluginCategory[] {
   const categories: DataSourcePluginCategory[] = [
-    { id: 'tsdb', title: 'Time series databases', plugins: [] },
-    { id: 'logging', title: 'Logging & document databases', plugins: [] },
+    { id: 'tsdb', title: '时间序列数据库', plugins: [] },
+    { id: 'logging', title: '日志和文档数据库', plugins: [] },
     { id: 'sql', title: 'SQL', plugins: [] },
-    { id: 'cloud', title: 'Cloud', plugins: [] },
-    { id: 'enterprise', title: 'Enterprise plugins', plugins: [] },
-    { id: 'other', title: 'Others', plugins: [] },
+    { id: 'cloud', title: '云服务', plugins: [] },
+    { id: 'enterprise', title: '企业插件', plugins: [] },
+    { id: 'other', title: '其他', plugins: [] },
   ];
 
   const categoryIndex: Record<string, DataSourcePluginCategory> = {};

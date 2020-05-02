@@ -20,20 +20,20 @@ const BasicSettings: FC<Props> = ({ dataSourceName, isDefault, onDefaultChange, 
               'preselected in new panels.'
             }
           >
-            Name
+            名称
           </FormLabel>
           <Input
             className="gf-form-input max-width-23"
             type="text"
             value={dataSourceName}
-            placeholder="Name"
+            placeholder="名称"
             onChange={event => onNameChange(event.target.value)}
             required
             aria-label={e2e.pages.DataSource.selectors.name}
           />
         </div>
         <Switch
-          label="Default"
+          label="默认"
           checked={isDefault}
           onChange={event => {
             // @ts-ignore

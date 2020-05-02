@@ -28,7 +28,7 @@
     "minInterval": true
   },
   "info": {
-    "description": "Open source time series database & alerting",
+    "description": "开源时间序列数据库 & 告警",
     "author": {
       "name": "Grafana Project",
       "url": "https://grafana.com"
@@ -39,7 +39,7 @@
     },
     "links": [
       {
-        "name": "Learn more",
+        "name": "学到更多",
         "url": "https://prometheus.io/"
       }
     ]

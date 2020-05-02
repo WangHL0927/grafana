@@ -9,7 +9,7 @@ export interface Props {
 
 const DashboardsTable: FC<Props> = ({ dashboards, onImport, onRemove }) => {
   function buttonText(dashboard: PluginDashboard) {
-    return dashboard.revision !== dashboard.importedRevision ? 'Update' : 'Re-import';
+    return dashboard.revision !== dashboard.importedRevision ? '更新' : '重新导入';
   }
 
   return (
@@ -31,7 +31,7 @@ const DashboardsTable: FC<Props> = ({ dashboards, onImport, onRemove }) => {
               <td style={{ textAlign: 'right' }}>
                 {!dashboard.imported ? (
                   <button className="btn btn-secondary btn-small" onClick={() => onImport(dashboard, false)}>
-                    Import
+                    导入
                   </button>
                 ) : (
                   <button className="btn btn-secondary btn-small" onClick={() => onImport(dashboard, true)}>
