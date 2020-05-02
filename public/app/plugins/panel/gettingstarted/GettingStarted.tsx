@@ -35,16 +35,16 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
 
     this.steps = [
       {
-        title: 'Install Grafana',
+        title: '安装 Grafana',
         icon: 'icon-gf icon-gf-check',
         href: 'http://docs.grafana.org/',
         target: '_blank',
-        note: 'Review the installation docs',
+        note: '查看安装文档',
         check: () => Promise.resolve(true),
       },
       {
-        title: 'Create a data source',
-        cta: 'Add data source',
+        title: '创建数据源',
+        cta: '添加数据源',
         icon: 'gicon gicon-datasources',
         href: 'datasources/new?gettingstarted',
         check: () => {
@@ -60,8 +60,8 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
         },
       },
       {
-        title: 'Build a dashboard',
-        cta: 'New dashboard',
+        title: '建立仪表板',
+        cta: '新建仪表板',
         icon: 'gicon gicon-dashboard',
         href: 'dashboard/new?gettingstarted',
         check: () => {
@@ -71,8 +71,8 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
         },
       },
       {
-        title: 'Invite your team',
-        cta: 'Add Users',
+        title: '邀请你的团队',
+        cta: '添加用户',
         icon: 'gicon gicon-team',
         href: 'org/users?gettingstarted',
         check: () => {
@@ -83,8 +83,8 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
         },
       },
       {
-        title: 'Install apps & plugins',
-        cta: 'Explore plugin repository',
+        title: '安装应用和插件',
+        cta: '探索插件库',
         icon: 'gicon gicon-plugins',
         href: 'https://grafana.com/plugins?utm_source=grafana_getting_started',
         check: () => {
@@ -138,7 +138,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
   render() {
     const { checksDone } = this.state;
     if (!checksDone) {
-      return <div>checking...</div>;
+      return <div>检查中...</div>;
     }
 
     return (

@@ -20,25 +20,25 @@ export class GrafanaLinksPanel extends PureComponent<Props> {
       <>
         <div className={styles.list}>
           <HomeLink
-            title="Documentation"
+            title="官方文档"
             icon="fa fa-book"
             url="https://grafana.com/docs/grafana/latest?utm_source=grafana_homelinks"
             target="_blank"
           />
           <HomeLink
-            title="Getting started"
+            title="快速入门"
             icon="fa fa-bolt"
             url="https://grafana.com/docs/grafana/latest/guides/getting_started/?utm_source=grafana_homelinks"
             target="_blank"
           />
           <HomeLink
-            title="Community forum"
+            title="社区论坛"
             icon="fa fa-comments"
             url="https://community.grafana.com?utm_source=grafana_homelinks"
             target="_blank"
           />
           <HomeLink
-            title="Report a bug"
+            title="报告错误"
             icon="fa fa-bug"
             url="https://github.com/grafana/grafana/issues/new?template=1-bug_report.md"
             target="_blank"

@@ -2,7 +2,7 @@
   "links": [],
   "panels": [
     {
-      "content": "<div class=\"dashboard-header\">\n  <span>Welcome to Grafana</span>\n</div>",
+      "content": "<div class=\"dashboard-header\">\n  <span>欢迎来到 Grafana</span>\n</div>",
       "datasource": null,
       "editable": true,
       "gridPos": {
@@ -39,7 +39,7 @@
       "search": false,
       "starred": true,
       "tags": [],
-      "title": "Dashboards",
+      "title": "仪表板",
       "type": "dashlist"
     },
     {
@@ -55,7 +55,7 @@
       "options": {
         "feedUrl": "https://grafana.com/blog/news.xml"
       },
-      "title": "Latest from the blog",
+      "title": "最新博客",
       "type": "news"
     },
     {
@@ -69,7 +69,7 @@
       "id": 123124,
       "links": [],
       "options": {},
-      "title": "Useful links",
+      "title": "实用链接",
       "type": "homelinks"
     }
   ],
@@ -89,5 +89,5 @@
     "type": "timepicker"
   },
   "timezone": "browser",
-  "title": "Home"
+  "title": "主页"
 }

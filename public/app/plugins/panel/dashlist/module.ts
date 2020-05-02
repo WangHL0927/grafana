@@ -39,9 +39,9 @@ class DashListCtrl extends PanelCtrl {
     this.events.on(PanelEvents.editModeInitialized, this.onInitEditMode.bind(this));
 
     this.groups = [
-      { list: [], show: false, header: 'Starred dashboards' },
-      { list: [], show: false, header: 'Recently viewed dashboards' },
-      { list: [], show: false, header: 'Search' },
+      { list: [], show: false, header: '已收藏的仪表板' },
+      { list: [], show: false, header: '最近查看的仪表板' },
+      { list: [], show: false, header: '搜索' },
     ];
 
     // update capability
