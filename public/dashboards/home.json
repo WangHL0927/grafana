@@ -11,7 +11,7 @@
   "links": [],
   "panels": [
     {
-      "content": "<div class=\"text-center dashboard-header\">\n  <span>Home Dashboard</span>\n</div>",
+      "content": "<div class=\"text-center dashboard-header\">\n  <span>主页仪表板</span>\n</div>",
       "editable": true,
       "id": 1,
       "links": [],
